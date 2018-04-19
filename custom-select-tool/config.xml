@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Name>Python Addin</Name>
+<AddInID>{45a030b3-96e6-4d1c-9b17-9d27b209f9aa}</AddInID>
+<Description>Python Addin</Description>
+<Version>1.0</Version>
+<Image/>
+<Author>Kimberly McCarty</Author>
+<Company>Esri</Company>
+<Date>04/18/2018</Date>
+<Targets>
+    <Target name="Desktop" version="10.6"/>
+</Targets>
+<AddIn language="PYTHON" library="custom_select_tool_addin.py" namespace="custom_select_tool_addin">
+    <ArcMap>
+        <Commands>
+            <Tool caption="Select Tool" category="Python Addin" class="ToolClass2" id="custom_select_tool_addin.tool" image="Images\square vivid violet.png" message="" tip="">
+                <Help heading=""/>
+            </Tool>
+        </Commands>
+        <Extensions>
+        </Extensions>
+        <Toolbars>
+            <Toolbar caption="PyToolbar" category="Python Addin" id="custom_select_tool_addin.toolbar" showInitially="true">
+                <Items>
+                    <Tool refID="custom_select_tool_addin.tool"/>
+                </Items>
+            </Toolbar>
+        </Toolbars>
+        <Menus>
+        </Menus>
+    </ArcMap>
+</AddIn>
+</ESRI.Configuration>
